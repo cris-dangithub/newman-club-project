@@ -1,11 +1,12 @@
 import "./App.css";
+import Home from "./pages/Home";
 import Navbar from "./shared/Navbar";
 
 function App() {
   return (
     <article className="c-app">
       <Navbar />
-      <main>*MAIN_CONTENT_PAGES*</main>
+      <Home />
       <footer>*-----FOOTER-----*</footer>
     </article>
   );
