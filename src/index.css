@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700;900&display=swap');
+
+:root {
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul {
+  padding-left: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.font-red-hat-display--bold {
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: bold;
+}
+
+.font-arimo--bold {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}

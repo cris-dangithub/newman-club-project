@@ -3,9 +3,8 @@ const LogoWhite = () => {
     <svg
       xmlns="http://www.w3.org/2000/svg"
       xmlnsXlink="http://www.w3.org/1999/xlink"
-      width="195"
-      height="87.715"
       viewBox="0 0 195 87.715"
+      className="LogoWhite"
     >
       <defs>
         <clipPath id="clip-path">
@@ -23,7 +22,7 @@ const LogoWhite = () => {
           id="Grupo_4"
           data-name="Grupo 4"
           transform="translate(0 -0.001)"
-          clip-path="url(#clip-path)"
+          clipPath="url(#clip-path)"
         >
           <path
             id="Trazado_10"

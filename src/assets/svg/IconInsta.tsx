@@ -1,9 +1,14 @@
-const Unknown = () => {
+import { FC } from "react";
+import { ISocialIcons } from "../../lib/interfaces/icons.interface";
+
+const IconInsta: FC<ISocialIcons> = ({
+  backgroundColor = "#fafafa",
+  iconColor = "#245086",
+}) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="49.599"
-      height="51.961"
+      width="45"
       viewBox="0 0 49.599 51.961"
     >
       <g
@@ -18,13 +23,13 @@ const Unknown = () => {
           height="51.961"
           rx="24.799"
           transform="translate(1012.857 7302.514)"
-          fill="#fafafa"
+          fill={backgroundColor}
         />
         <text
           id="_"
           data-name=""
           transform="translate(1028.572 7315.504)"
-          fill="#245086"
+          fill={iconColor}
           fontSize="30"
           fontFamily="FontAwesome5Brands-Regular, 'Font Awesome \35  Brands'"
         >
@@ -37,4 +42,4 @@ const Unknown = () => {
   );
 };
 
-export default Unknown;
+export default IconInsta;
