@@ -1,6 +1,8 @@
 import { useRef } from "react";
 import "./Header.css";
 import JoinUsBtn from "./JoinUsBtn";
+import Divider from "../divider/Divider";
+import IconHeaderDesktop from "./IconHeaderDesktop";
 
 const Header = () => {
   function handleClick() {
@@ -37,6 +39,8 @@ const Header = () => {
         <source src="/video/Final2.mp4" />
       </video>
       <JoinUsBtn />
+      <IconHeaderDesktop />
+      <Divider classname="header__divider" />
     </header>
   );
 };

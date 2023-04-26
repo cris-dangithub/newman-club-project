@@ -1,9 +1,8 @@
-const IconComent = () => {
+const IconComment = () => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="49.178"
-      height="49.178"
+      className="IconComment"
       viewBox="0 0 49.178 49.178"
     >
       <path
@@ -16,4 +15,4 @@ const IconComent = () => {
   );
 };
 
-export default IconComent;
+export default IconComment;

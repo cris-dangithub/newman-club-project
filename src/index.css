@@ -17,10 +17,11 @@
   --color-dark-blue2: #003473;
   --color-light-aqua2: #08bdab;
   --color-darker-blue: #154e85;
-  --color-light-gray2: #f1f5f8;
+  --color-light-gray3: #f1f5f8;
   --color-medium-gray2: #666666;
   --color-transparent: #00000000;
   --color-light-gray3: #f7f7f7;
+  --color-light-gray4: #e4e4e4;
   --color-dark-orange: #ef7a53;
   --color-medium-gray3: #6c6c6c;
   --color-darker-blue2: #235286;
@@ -31,10 +32,17 @@
 * {
   box-sizing: border-box;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   /* background-color: var(--color-dark-blue2); */
-
+}
+.root {
+  background-color: var(--color-light-gray4);
 }
 
 h1,

@@ -1,0 +1,10 @@
+.c-divider {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background-color: var(--color-dark-orange);
+  width: 3px;
+  transform: translateY(50%);
+}

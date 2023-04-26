@@ -1,8 +1,15 @@
-const IconTwoPeople = () => {
+import { CSSProperties, FC } from "react";
+import { IJoinUsIcons } from "../../lib/interfaces/icons.interface";
+
+const IconTwoPeople: FC<IJoinUsIcons> = ({ isActive }) => {
+  const objStyle: CSSProperties = {
+    opacity: 0,
+  };
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       className="IconJoinUs IconJoinUs--two-people"
+      style={isActive ? objStyle : {}}
       viewBox="0 0 54 37.935"
     >
       <path

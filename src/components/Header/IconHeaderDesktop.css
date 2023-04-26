@@ -1,0 +1,29 @@
+.c-IconHeaderDesktop {
+  position: absolute;
+  bottom: 6rem;
+  width: 100%;
+  display: none;
+}
+
+.IconHeaderDesktop__circle {
+  margin: auto;
+  width: 50px;
+  aspect-ratio: 0.56;
+  border-radius: 999px;
+  border: 3px solid var(--color-dark-orange);
+  display: flex;
+  justify-content: center;
+}
+.IconHeaderDesktop__circle-point {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin-top: 1rem;
+  background-color: var(--color-dark-orange);
+}
+
+@media (min-width: 1024px) {
+  .c-IconHeaderDesktop {
+    display: block;
+  }
+}
