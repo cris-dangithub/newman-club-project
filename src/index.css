@@ -1,13 +1,40 @@
 @import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;700&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@700;900&display=swap");
+@import url("/public/fonts/segoe-ui-4-cufonfonts-webfont/style.css");
 
 :root {
+  --color-white: #ffffff;
+  --color-dark-blue: #245086;
+  --color-light-orange: #ff7e54;
+  --color-medium-gray: #707070;
+  --color-light-aqua: #5ad3df;
+  --color-smoke-white: #f5f5f5;
+  --color-bright-white: #fafafa;
+  --color-black-translucent: #00000029;
+  --color-black: #000000;
+  --color-medium-aqua: #2ac5b6;
+  --color-light-gray: #e3e3e3;
+  --color-dark-blue2: #003473;
+  --color-light-aqua2: #08bdab;
+  --color-darker-blue: #154e85;
+  --color-light-gray2: #f1f5f8;
+  --color-medium-gray2: #666666;
+  --color-transparent: #00000000;
+  --color-light-gray3: #f7f7f7;
+  --color-dark-orange: #ef7a53;
+  --color-medium-gray3: #6c6c6c;
+  --color-darker-blue2: #235286;
+  --color-dark-green: #285c58;
+  --color-darker-blue3: #134e84;
+  --color-medium-blue: #205a8c;
 }
 * {
   box-sizing: border-box;
 }
 body {
   margin: 0;
+  /* background-color: var(--color-dark-blue2); */
+
 }
 
 h1,
@@ -30,6 +57,14 @@ a {
   color: inherit;
 }
 
+button {
+  border: none;
+  outline: none;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+}
+
 .font-red-hat-display--bold {
   font-family: "Red Hat Display", sans-serif;
   font-weight: bold;
@@ -38,6 +73,10 @@ a {
 .font-arimo--bold {
   font-family: "Roboto", sans-serif;
   font-weight: 900;
+}
+
+.font-segoe--bold {
+  font-family: "Segoe UI Bold";
 }
 
 .flex {

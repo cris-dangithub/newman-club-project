@@ -1,5 +1,6 @@
 import { useRef } from "react";
 import "./Header.css";
+import JoinUsBtn from "./JoinUsBtn";
 
 const Header = () => {
   function handleClick() {
@@ -35,6 +36,7 @@ const Header = () => {
       >
         <source src="/video/Final2.mp4" />
       </video>
+      <JoinUsBtn />
     </header>
   );
 };

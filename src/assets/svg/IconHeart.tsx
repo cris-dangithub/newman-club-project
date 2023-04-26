@@ -2,8 +2,7 @@ const IconHeart = () => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="52.218"
-      height="47.845"
+      className="IconJoinUs IconJoinUs--heart"
       viewBox="0 0 52.218 47.845"
     >
       <path

@@ -1,0 +1,51 @@
+.c-join-us-btn {
+  align-items: center;
+  background-color: var(--color-white);
+  position: relative;
+  margin-bottom: 3.5rem;
+  width: 13.5rem;
+  border-radius: 999px;
+  cursor: pointer;
+}
+
+.join-us-btn__heart {
+  background-color: var(--color-light-aqua);
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  position: relative;
+}
+
+.join-us-btn__text {
+  text-transform: uppercase;
+  margin: auto;
+  color: var(--color-medium-gray);
+}
+
+.join-us-btn__text--yay {
+  color: var(--color-medium-gray);
+}
+
+.IconJoinUs {
+  width: 65%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  transition: opacity 300ms;
+}
+.IconJoinUs--two-people {
+  opacity: 0;
+}
+
+.c-join-us-btn:hover .IconJoinUs--heart {
+  opacity: 0;
+}
+
+.c-join-us-btn:hover .IconJoinUs--two-people {
+  opacity: 1;
+}

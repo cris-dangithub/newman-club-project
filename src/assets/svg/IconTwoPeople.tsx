@@ -2,8 +2,7 @@ const IconTwoPeople = () => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="54"
-      height="37.935"
+      className="IconJoinUs IconJoinUs--two-people"
       viewBox="0 0 54 37.935"
     >
       <path
