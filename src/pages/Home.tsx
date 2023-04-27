@@ -110,6 +110,29 @@ const Home = () => {
           More memories
         </button>
       </article>
+      {/* Newman Sountrack */}
+      <section className="flex-col newman-soundtrack">
+        <div className="flex-col newman-soundtrack__container">
+          <img
+            className="newman-soundtrack__spoty"
+            src="/img/spotify.jpg"
+            alt=""
+          />
+          <div className="newman-soundtrack__man-container">
+            <img
+              className="newman-soundtrack__man"
+              src="/img/men-happy.png"
+              alt=""
+            />
+            <div className="font-red-hat-display--bold flex-col newman-soundtrack__text-container">
+              <span className="newman-soundtrack__text">Newman</span>
+              <span className="newman-soundtrack__text newman-soundtrack__text--moved">
+                Soundtrack
+              </span>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
   );
 };

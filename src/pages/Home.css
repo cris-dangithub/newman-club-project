@@ -115,7 +115,6 @@
 .the-crew__btn {
   justify-self: center;
 }
-/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 
 .memories {
   padding-top: 5rem;
@@ -150,6 +149,49 @@
 
 .memories__btn {
   background-color: var(--color-light-aqua) !important;
+}
+
+.newman-soundtrack {
+  background: linear-gradient(
+    135deg,
+    var(--color-black) 30%,
+    var(--color-medium-aqua) 100%
+  );
+  padding-top: 4.7rem;
+}
+
+.newman-soundtrack__container {
+  align-items: center;
+  gap: 5.5rem;
+  max-width: 500px;
+  margin: auto;
+}
+.newman-soundtrack__spoty {
+  width: 50%;
+}
+.newman-soundtrack__man-container {
+  position: relative;
+  bottom: -0.3rem;
+}
+.newman-soundtrack__man {
+  position: relative;
+  margin: auto;
+  height: 35rem;
+  width: auto;
+}
+.newman-soundtrack__text-container {
+  color: var(--color-bright-white);
+  font-size: 3.5rem;
+  position: absolute;
+  bottom: 2rem;
+  left: 13rem;
+  text-align: start;
+  z-index: 200;
+  line-height: 3.5rem;
+}
+
+.newman-soundtrack__text--moved {
+  padding-left: 3rem;
 }
 
 @media (min-width: 1024px) {
@@ -244,5 +286,26 @@
   }
   .the-crew__title {
     font-size: 6.6rem;
+  }
+  .newman-soundtrack {
+    padding: 0 2rem;
+    gap: 0;
+  }
+  .newman-soundtrack__container {
+    flex-direction: row !important;
+    flex-direction: row-reverse !important;
+    max-width: 1680px;
+    gap: 0;
+  }
+  .newman-soundtrack__spoty {
+    flex: 1;
+    width: 23rem;
+  }
+  .newman-soundtrack__man-container {
+    flex: 1;
+    align-self: flex-end;
+  }
+  .newman-soundtrack__man {
+    align-self: flex-end;
   }
 }
