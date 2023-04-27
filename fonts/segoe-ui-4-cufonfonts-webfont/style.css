@@ -4,14 +4,14 @@
   font-family: "Segoe UI Regular";
   font-style: normal;
   font-weight: normal;
-  src: url("Segoe UI.woff") format("woff");
+  src: url("./SegoeUI.woff") format("woff");
 }
 
 @font-face {
   font-family: "Segoe UI Italic";
   font-style: normal;
   font-weight: normal;
-  src: url("Segoe UI Italic.woff") format("woff");
+  src: url("./SegoeUIItalic.woff") format("woff");
 }
 
 @font-face {
@@ -25,5 +25,5 @@
   font-family: "Segoe UI Bold Italic";
   font-style: normal;
   font-weight: normal;
-  src: url("Segoe UI Bold Italic.woff") format("woff");
+  src: url("./SegoeUIBoldItalic.woff") format("woff");
 }
