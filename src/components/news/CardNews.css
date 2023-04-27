@@ -1,0 +1,90 @@
+.c-CardNews {
+  position: relative;
+  height: 21rem;
+  border-radius: 30px;
+  overflow: hidden;
+  justify-content: end;
+  padding: 2.1rem;
+  color: var(--color-light-gray3);
+}
+.CardNews__background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -5;
+}
+.CardNews__date-container {
+  position: absolute;
+  top: 0;
+  left: 2rem;
+  background-color: var(--color-dark-orange);
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  width: 6.13rem;
+  align-items: center;
+  padding: 1.5rem 1rem;
+}
+.CardNews__date {
+  font-size: 1.7rem;
+  line-height: 1.7rem;
+}
+.CardNews__date--day {
+  font-weight: bold;
+  font-size: 3rem;
+  line-height: 3rem;
+}
+
+.CardNews__autor,
+.CardNews__name-new,
+.CardNews__description-container {
+  text-align: center;
+  transition: transform 200ms;
+  transform: translateY(7rem);
+}
+.c-CardNews:hover .CardNews__autor,
+.c-CardNews:hover .CardNews__name-new,
+.c-CardNews:hover .CardNews__description-container {
+  transform: translateY(0);
+}
+.CardNews__autor {
+  font-size: 0.8rem;
+}
+.CardNews__name-new {
+  font-size: 1.75rem;
+  text-transform: uppercase;
+  margin-bottom: 1.2rem;
+}
+.CardNews__description-container {
+  opacity: 0;
+  transition: opacity 200ms, transform 200ms;
+  align-items: center;
+}
+.c-CardNews:hover .CardNews__description-container {
+  opacity: 1;
+}
+.CardNews__description {
+  font-weight: 300;
+  font-size: 0.9rem;
+}
+.CardNews__btn {
+  background-color: var(--color-light-aqua);
+  color: var(--color-dark-blue2);
+  font-weight: bold;
+  padding: 0.5rem 1.5rem;
+  border-radius: 99px;
+  margin-top: 0.5rem;
+}
+
+@media (min-width: 1280px) {
+  .c-CardNews {
+    height: 30rem;
+  }
+  .CardNews__autor,
+  .CardNews__name-new,
+  .CardNews__description-container {
+    text-align: start;
+  }
+}

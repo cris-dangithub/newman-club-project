@@ -57,6 +57,7 @@
   padding-top: 5rem;
   padding-bottom: 20rem;
   display: flex;
+  position: relative;
 }
 .the-crew-border-desktop {
   display: none;
@@ -129,7 +130,6 @@
   .events__divider {
     display: block;
   }
-  /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
   .the-crew {
     padding-top: 8rem;
   }

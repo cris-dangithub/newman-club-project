@@ -10,6 +10,7 @@ import { IEvents } from "../lib/interfaces/events.interface";
 import Divider from "../components/divider/Divider";
 import { theCrewTextOne } from "../lib/utils/texts";
 import CardRewards from "../components/the-crew/CardRewards";
+import WhatNews from "../components/news/WhatNews";
 
 const Home = () => {
   const [maxEvents, setMaxEvents] = useState<number>();
@@ -87,8 +88,10 @@ const Home = () => {
             />
           </div>
         </section>
-        <Divider height={130}/>
+        <Divider height={130} />
       </article>
+      {/* What's new */}
+      <WhatNews />
     </main>
   );
 };
