@@ -27,7 +27,7 @@ const Header = () => {
         onClick={handleClick}
         playsInline
       >
-        <source src="/video/Final.mp4" />
+        <source src="video/Final.mp4" />
       </video>
       <video
         className="header__video header__video--desktop"
@@ -36,7 +36,7 @@ const Header = () => {
         loop
         playsInline
       >
-        <source src="/video/Final2.mp4" />
+        <source src="video/Final2.mp4" />
       </video>
       <JoinUsBtn />
       <IconHeaderDesktop />
