@@ -3,8 +3,6 @@ const LogoBlue = () => {
     <svg
       xmlns="http://www.w3.org/2000/svg"
       xmlnsXlink="http://www.w3.org/1999/xlink"
-      width="96.537"
-      height="43.424"
       viewBox="0 0 96.537 43.424"
     >
       <defs>

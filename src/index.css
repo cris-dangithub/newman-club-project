@@ -74,6 +74,13 @@ button {
 img {
   width: 100%;
 }
+
+input,
+textarea {
+  border: none;
+  outline: none;
+}
+
 .font-red-hat-display--regular {
   font-family: "Red Hat Display", sans-serif;
   font-weight: 400;

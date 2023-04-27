@@ -158,6 +158,7 @@
     var(--color-medium-aqua) 100%
   );
   padding-top: 4.7rem;
+  margin-bottom: 5rem;
 }
 
 .newman-soundtrack__container {
@@ -193,7 +194,61 @@
 .newman-soundtrack__text--moved {
   padding-left: 3rem;
 }
+/* !!!!!!!!!!!!!!!!! */
+.joinus__container {
+  max-width: 500px;
+  margin: auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.joinus__img-container {
+  width: 20.7rem;
+  position: relative;
+  margin: auto;
+}
+.joinus__img {
+  height: 100%;
+  object-fit: cover;
+}
+.joinus__img-logo {
+  position: absolute;
+  top: 0;
+  right: 3rem;
+  background-color: var(--color-light-orange);
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  padding: 1.5rem 0.5rem;
+  width: 3.3rem;
+  height: 4.25rem;
+}
 
+.form {
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+}
+.joinus__form-text {
+  color: var(--color-dark-green);
+}
+
+.joinus__input {
+  font-family: "font-poppins", sans-serif;
+  font-weight: 400;
+  border-radius: 28px;
+  padding: 1rem;
+  border: 1px solid #707070;
+  text-align: center;
+  width: 100% !important;
+}
+
+.joinus__input--textarea {
+  resize: none;
+  height: 12rem !important;
+}
+
+.joinus__btn {
+  margin-top: 1rem;
+}
 @media (min-width: 1024px) {
   .events__container {
     grid-template-columns: 1fr 1fr 1fr;

@@ -12,12 +12,27 @@ import { theCrewTextOne } from "../lib/utils/texts";
 import CardRewards from "../components/the-crew/CardRewards";
 import WhatNews from "../components/news/WhatNews";
 import { memories } from "../lib/mocks/memories.mocks";
+import LogoBlue from "../assets/svg/LogoBlue";
+import { useForm } from "react-hook-form";
+import { IForm } from "../lib/interfaces/form.interface";
 
 const Home = () => {
+  function Submit(data: IForm) {
+    console.log(data);
+  }
   const [maxEvents, setMaxEvents] = useState<number>();
   const [eventDetails, setEventDetails] = useState<IEvents>();
   const [isShowedDetails, setIsShowedDetails] = useState<boolean>(false);
   const { windowWidth } = useResizeWindow();
+
+  const { register, handleSubmit } = useForm<IForm>({
+    defaultValues: {
+      email: "",
+      message: "",
+      name: "",
+      phoneNumber: "",
+    },
+  });
 
   useEffect(() => {
     if (windowWidth < 1280) return setMaxEvents(3);
@@ -133,6 +148,63 @@ const Home = () => {
           </div>
         </div>
       </section>
+      {/* Form */}
+      <article className="joinus">
+        <section className="joinus__container">
+          <div className="joinus__img-container">
+            <img className="joinus__img" src="/img/joinus.png" alt="" />
+            <div className="joinus__img-logo">
+              <LogoBlue />
+            </div>
+          </div>
+          <form
+            id="form"
+            className="flex-col form"
+            onSubmit={handleSubmit(Submit)}
+          >
+            <h2 className="font-red-hat-display--regular the-crew__title">
+              Join{" "}
+              <span className="font-red-hat-display--bold the-crew__title--crew">
+                us.
+              </span>
+            </h2>
+            <p className="font-poppins joinus__form-text">
+              In the sea of life, there is nothing to fear if you have God as
+              your captain. Join our crew!
+            </p>
+            <input
+              type="text"
+              {...register("name")}
+              placeholder="Full Name"
+              className="joinus__input"
+              required
+            />
+            <input
+              type="email"
+              {...register("email")}
+              placeholder="Email Address"
+              className="joinus__input"
+              required
+            />
+            <input
+              type="number"
+              {...register("phoneNumber")}
+              placeholder="Cell Phone Number"
+              className="joinus__input"
+              required
+            />
+            <textarea
+              {...register("message")}
+              placeholder="Message"
+              className="joinus__input joinus__input--textarea"
+              required
+            />
+            <button className="font-segoe--bold orange-btn joinus__btn">
+              Join us
+            </button>
+          </form>
+        </section>
+      </article>
     </main>
   );
 };
