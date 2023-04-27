@@ -61,7 +61,7 @@ const Home = () => {
 
       {/* The crew */}
       <article id="the-crew" className="the-crew">
-        <section className="the-crew__card">
+        <section className="flex-col the-crew__card">
           <div className="font-poppins the-crew__description">
             <h2 className="font-red-hat-display--regular the-crew__title">
               The{" "}
@@ -79,8 +79,11 @@ const Home = () => {
           </div>
           <CardRewards />
           <div className="the-crew__image-container">
-            <img className="the-crew__image" src="/img/memories1.png" />
             <img className="the-crew__image" src="/img/memories2.png" />
+            <img
+              className="the-crew__image the-crew__image--main"
+              src="/img/memories1.png"
+            />
           </div>
         </section>
       </article>
