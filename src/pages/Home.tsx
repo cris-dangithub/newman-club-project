@@ -87,6 +87,7 @@ const Home = () => {
             />
           </div>
         </section>
+        <Divider height={130}/>
       </article>
     </main>
   );
