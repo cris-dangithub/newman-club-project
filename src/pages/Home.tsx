@@ -11,6 +11,7 @@ import Divider from "../components/divider/Divider";
 import { theCrewTextOne } from "../lib/utils/texts";
 import CardRewards from "../components/the-crew/CardRewards";
 import WhatNews from "../components/news/WhatNews";
+import { memories } from "../lib/mocks/memories.mocks";
 
 const Home = () => {
   const [maxEvents, setMaxEvents] = useState<number>();
@@ -92,6 +93,23 @@ const Home = () => {
       </article>
       {/* What's new */}
       <WhatNews />
+      {/* Memories */}
+      <article id="memories" className="flex-col memories">
+        <TitleRudder title="Memories" />
+        <div className="memories__container">
+          {memories.map((memory, idx) => (
+            <img
+              key={idx}
+              src={memory.url}
+              alt=""
+              className="memories__image"
+            />
+          ))}
+        </div>
+        <button className="font-segoe--bold orange-btn memories__btn">
+          More memories
+        </button>
+      </article>
     </main>
   );
 };

@@ -5,7 +5,7 @@ import "./WhatNews.css";
 
 const WhatNews = () => {
   return (
-    <article className="flex-col c-WhatNews">
+    <article className="flex-col c-WhatNews" id="whats-new">
       <div className="flex-col WhatNews__title-container">
         <IconRudder />
         <h2 className="font-red-hat-display--regular WhatNews__title">
