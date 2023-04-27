@@ -18,7 +18,9 @@
   text-align: center;
 }
 
-.CardRewards__item--border {
+.CardRewards__divider {
+  width: 50%;
+  margin: auto;
   border-bottom: 1px solid var(--color-darker-blue2);
 }
 
@@ -32,4 +34,28 @@
 }
 .CardRewards__text {
   color: var(--color-darker-blue2);
+}
+
+@media (min-width: 1024px) {
+  .c-CardRewards {
+    flex-direction: row !important;
+    position: absolute;
+    z-index: 100;
+    bottom: -10rem;
+    left: 0;
+    right: 0;
+    max-width: 812px;
+  }
+  .CardRewards__item {
+    width: 14rem;
+    margin: auto;
+  }
+  .CardRewards__divider {
+    width: 1px;
+    height: 100px;
+    align-self: center;
+    border-bottom: none;
+    margin: 0;
+    border-right: 1px solid var(--color-darker-blue2);
+  }
 }

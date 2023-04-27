@@ -62,6 +62,7 @@ const Home = () => {
       {/* The crew */}
       <article id="the-crew" className="the-crew">
         <section className="flex-col the-crew__card">
+          <div className="the-crew-border-desktop"></div>
           <div className="font-poppins the-crew__description">
             <h2 className="font-red-hat-display--regular the-crew__title">
               The{" "}

@@ -6,7 +6,7 @@ import "./CardRewards.css";
 const CardRewards = () => {
   return (
     <ul className="flex-col c-CardRewards">
-      <li className="flex-col CardRewards__item CardRewards__item--border">
+      <li className="flex-col CardRewards__item">
         <IconSmile />
         <span className="font-red-hat-display--bold CardRewards__number">
           165
@@ -15,7 +15,8 @@ const CardRewards = () => {
           Happy freshman members
         </span>
       </li>
-      <li className="flex-col CardRewards__item CardRewards__item--border">
+      <li className="CardRewards__divider"></li>
+      <li className="flex-col CardRewards__item ">
         <IconTwoPeople className="CardRewards__item-icon-two-people" />
         <span className="font-red-hat-display--bold CardRewards__number">
           13
@@ -24,6 +25,7 @@ const CardRewards = () => {
           Wise Senior members
         </span>
       </li>
+      <li className="CardRewards__divider"></li>
       <li className="flex-col CardRewards__item">
         <IconThreePeople />
         <span className="font-red-hat-display--bold CardRewards__number">
