@@ -8,6 +8,8 @@ import "./Home.css";
 import CardEventDetails from "../components/events/CardEventDetails";
 import { IEvents } from "../lib/interfaces/events.interface";
 import Divider from "../components/divider/Divider";
+import { theCrewTextOne } from "../lib/utils/texts";
+import CardRewards from "../components/the-crew/CardRewards";
 
 const Home = () => {
   const [maxEvents, setMaxEvents] = useState<number>();
@@ -21,7 +23,7 @@ const Home = () => {
   }, [windowWidth]);
 
   return (
-    <main>
+    <main className="c-Home">
       <Header />
 
       {/* EVENTS */}
@@ -55,6 +57,32 @@ const Home = () => {
           setIsShowedDetails={setIsShowedDetails}
         />
         <Divider height={190} classname="events__divider" />
+      </article>
+
+      {/* The crew */}
+      <article id="the-crew" className="the-crew">
+        <section className="the-crew__card">
+          <div className="font-poppins the-crew__description">
+            <h2 className="font-red-hat-display--regular the-crew__title">
+              The{" "}
+              <span className="font-red-hat-display--bold the-crew__title--crew">
+                crew.
+              </span>
+            </h2>
+            <p className="the-crew__text">
+              {theCrewTextOne} <br />
+              <br /> {theCrewTextOne}{" "}
+            </p>
+            <button className="font-segoe--bold orange-btn the-crew__btn">
+              Learn More
+            </button>
+          </div>
+          <CardRewards />
+          <div className="the-crew__image-container">
+            <img className="the-crew__image" src="/img/memories1.png" />
+            <img className="the-crew__image" src="/img/memories2.png" />
+          </div>
+        </section>
       </article>
     </main>
   );

@@ -1,4 +1,6 @@
 .c-app {
   position: relative;
   min-height: 200vh;
+  overflow: hidden;
+  background-color: var(--color-white);
 }

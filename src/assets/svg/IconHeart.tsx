@@ -1,7 +1,7 @@
 import { CSSProperties, FC } from "react";
 import { IJoinUsIcons } from "../../lib/interfaces/icons.interface";
 
-const IconHeart: FC<IJoinUsIcons> = ({ isActive }) => {
+const IconHeart: FC<IJoinUsIcons> = ({ isActive, className }) => {
   const objStyle: CSSProperties = {
     opacity: 1,
     transform: "scale(1.0)",
@@ -9,7 +9,7 @@ const IconHeart: FC<IJoinUsIcons> = ({ isActive }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      className="IconJoinUs IconJoinUs--heart"
+      className={className}
       style={isActive ? objStyle : {}}
       viewBox="0 0 52.218 47.845"
     >

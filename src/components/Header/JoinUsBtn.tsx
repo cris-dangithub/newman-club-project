@@ -20,8 +20,14 @@ const JoinUsBtn = () => {
           isClicked ? "join-us-btn__heart--clicked" : ""
         }`}
       >
-        <IconHeart isActive={isClicked} />
-        <IconTwoPeople isActive={isClicked} />
+        <IconHeart
+          isActive={isClicked}
+          className="IconJoinUs IconJoinUs--heart"
+        />
+        <IconTwoPeople
+          isActive={isClicked}
+          className="IconJoinUs IconJoinUs--two-people"
+        />
       </button>
 
       <span className="font-segoe--bold join-us-btn__text">

@@ -4,5 +4,6 @@ export interface ISocialIcons {
 }
 
 export interface IJoinUsIcons {
-  isActive: boolean;
+  isActive?: boolean;
+  className?: string;
 }
