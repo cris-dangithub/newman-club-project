@@ -1,0 +1,111 @@
+.c-CardEventDetails {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 500;
+  background-color: transparent;
+  padding: 2rem;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 500ms;
+  transform: translateX(-100%);
+}
+
+.CardEventDetails__card-details {
+  background-color: rgba(2, 3, 4, 0.7);
+  color: var(--color-light-gray2);
+  padding: 2.7rem;
+  border-radius: 33px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 1.5rem;
+  column-gap: 1rem;
+  max-width: 1640px;
+}
+
+.card-details__description-container {
+  grid-column: 1 / 3;
+  text-align: start;
+  display: grid;
+  align-self: flex-start;
+  gap: 1rem;
+}
+
+.card-details__description-title {
+}
+
+.card-details__info-place-container {
+  display: flex;
+  row-gap: 0.2rem;
+  column-gap: 1rem;
+  flex-wrap: wrap;
+}
+.card-details__place-date {
+}
+.card-details__place-time {
+}
+.card-details__place {
+}
+
+.card-details__large-description {
+}
+
+.card-details__date-event-container {
+  align-items: center;
+  color: var(--color-dark-orange);
+  font-weight: bold;
+  justify-content: center;
+  transform: scale(1.2);
+}
+
+.card-details__image {
+  width: 100%;
+  height: 15rem;
+  object-fit: cover;
+  border-radius: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .card-details__date-event-container {
+    transform: scale(1.5);
+  }
+}
+
+@media (min-width: 1024px) {
+  .card-details__date-event-container {
+    transform: scale(1);
+  }
+  .card-details__date-event {
+    position: static;
+    transform: translateY(0);
+    opacity: 1;
+  }
+  .card-details__image {
+    height: 20rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .CardEventDetails__card-details {
+    grid-template-columns: 1fr 1fr 2fr;
+  }
+  .card-details__image {
+    height: 28rem;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+  .card-details__date-event-container {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    justify-content: start;
+    margin-top: 3.5rem;
+  }
+  .card-details__description-container {
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+    margin-top: 3.5rem;
+  }
+}

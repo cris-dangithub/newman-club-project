@@ -5,9 +5,13 @@ import useResizeWindow from "../lib/hooks/useResizeWindow";
 import { events } from "../lib/mocks/evetns.mocks";
 import { useState, useEffect } from "react";
 import "./Home.css";
+import CardEventDetails from "../components/events/CardEventDetails";
+import { IEvents } from "../lib/interfaces/events.interface";
 
 const Home = () => {
   const [maxEvents, setMaxEvents] = useState<number>();
+  const [eventDetails, setEventDetails] = useState<IEvents>();
+  const [isShowedDetails, setIsShowedDetails] = useState<boolean>(false);
   const { windowWidth } = useResizeWindow();
 
   useEffect(() => {
@@ -24,15 +28,27 @@ const Home = () => {
         <TitleRudder title="Events" />
         <div className="events__container">
           {events
-            .map((event, idx) => (
-              <CardEvent key={event.id} event={event} numEvent={idx + 1} />
+            .map((event) => (
+              <CardEvent
+                key={event.id}
+                event={event}
+                setEventDetails={setEventDetails}
+                setIsShowedDetails={setIsShowedDetails}
+              />
             ))
             .slice(0, maxEvents)}
         </div>
         <p className="font-poppins events__phrase">
           Let's have fun, join us in our events. Find out more here
         </p>
-        <button className="font-segoe--bold orange-btn events__btn">More events</button>
+        <button className="font-segoe--bold orange-btn events__btn">
+          More events
+        </button>
+        <CardEventDetails
+          eventDetails={eventDetails}
+          isShowedDetails={isShowedDetails}
+          setIsShowedDetails={setIsShowedDetails}
+        />
       </article>
     </main>
   );

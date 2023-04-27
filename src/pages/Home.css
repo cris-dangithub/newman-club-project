@@ -1,4 +1,5 @@
 .events {
+  position: relative;
   padding: 3.7rem 2rem;
   scroll-margin-top: 80px;
   text-align: center;

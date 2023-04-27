@@ -1,24 +1,19 @@
 import { FC, useRef, useState } from "react";
 import "./CardEvent.css";
 import { IEvents } from "../../lib/interfaces/events.interface";
-import useResizeWindow from "../../lib/hooks/useResizeWindow";
 import Divider from "../divider/Divider";
+import DateEvent from "./DateEvent";
 
 interface CardEvent {
   event: IEvents;
-  numEvent: number;
+  setEventDetails: React.Dispatch<React.SetStateAction<IEvents | undefined>>;
+  setIsShowedDetails: React.Dispatch<React.SetStateAction<boolean>>;
 }
-const CardEvent: FC<CardEvent> = ({ event, numEvent }) => {
-  function getMonth() {
-    if (windowWidth < 1024) return date.split(" ")[0].substring(0, 3);
-    return date.split(" ")[0].substring(0, 4);
-  }
-
-  function getDay() {
-    if (windowWidth < 1024) return date.split(" ")[1].substring(0, 3);
-    return date.split(" ")[1].substring(0, 4);
-  }
-
+const CardEvent: FC<CardEvent> = ({
+  event,
+  setEventDetails,
+  setIsShowedDetails,
+}) => {
   function handleMouseOver() {
     setIsMouseIn(true);
     clearInterval(setTimeOutRef.current);
@@ -29,13 +24,13 @@ const CardEvent: FC<CardEvent> = ({ event, numEvent }) => {
     setTimeOutRef.current = timeOutRef;
   }
 
+  function showDetails() {
+    setEventDetails(event);
+    setIsShowedDetails(true);
+  }
+
   const [isMouseIn, setIsMouseIn] = useState<boolean>();
   const setTimeOutRef = useRef<number>();
-  const { windowWidth } = useResizeWindow();
-  const date = event.date.toLocaleDateString("en-US", {
-    month: "long",
-    day: "numeric",
-  });
 
   return (
     <section
@@ -44,16 +39,14 @@ const CardEvent: FC<CardEvent> = ({ event, numEvent }) => {
       }`}
       onMouseOver={handleMouseOver}
       onMouseLeave={handleMouseLeave}
+      onClick={showDetails}
     >
       <img className="CardEvent__img-background" src={event.img} alt="" />
       <div className="overlay CardEvent__overlay-background"></div>
-      <h3 className="CardEvent__numEvent">Event {numEvent}</h3>
+      <h3 className="CardEvent__numEvent">{event.name}</h3>
       <div className="flex-col CardEvent__date-event">
         <Divider classname="CardEvent__divider" />
-        <span className="CardEvent__date CardEvent__date--day">{getDay()}</span>
-        <span className="CardEvent__date CardEvent__date--month">
-          {getMonth()}
-        </span>
+        <DateEvent date={event.date} />
       </div>
     </section>
   );
