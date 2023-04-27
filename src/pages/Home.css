@@ -50,7 +50,6 @@
   display: none;
 }
 
-/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 .the-crew {
   background-color: var(--color-smoke-white);
   padding-left: 2rem;
@@ -131,7 +130,9 @@
     display: block;
   }
   /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
-
+  .the-crew {
+    padding-top: 8rem;
+  }
   .the-crew__card {
     flex-direction: row !important;
     justify-content: space-between;
