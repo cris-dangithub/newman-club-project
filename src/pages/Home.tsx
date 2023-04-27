@@ -7,6 +7,7 @@ import { useState, useEffect } from "react";
 import "./Home.css";
 import CardEventDetails from "../components/events/CardEventDetails";
 import { IEvents } from "../lib/interfaces/events.interface";
+import Divider from "../components/divider/Divider";
 
 const Home = () => {
   const [maxEvents, setMaxEvents] = useState<number>();
@@ -37,6 +38,10 @@ const Home = () => {
               />
             ))
             .slice(0, maxEvents)}
+          <div className="events__container-background">
+            <div className="events__container-background--circle"></div>
+            <div className="events__container-background--square"></div>
+          </div>
         </div>
         <p className="font-poppins events__phrase">
           Let's have fun, join us in our events. Find out more here
@@ -49,6 +54,7 @@ const Home = () => {
           isShowedDetails={isShowedDetails}
           setIsShowedDetails={setIsShowedDetails}
         />
+        <Divider height={190} classname="events__divider" />
       </article>
     </main>
   );
