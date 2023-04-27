@@ -1,0 +1,17 @@
+.c-TitleRudder {
+  align-items: center;
+}
+
+.TitleRudder__text {
+  text-transform: uppercase;
+  font-size: 2rem;
+  color: var(--color-dark-blue);
+}
+
+@media (min-width: 1024px) {
+  .TitleRudder__text {
+    text-transform: capitalize;
+    font-size: 3.75rem;
+    line-height: 3.75rem;
+  }
+}

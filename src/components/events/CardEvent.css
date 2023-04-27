@@ -1,0 +1,112 @@
+.c-CardEvent {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  height: 11.5rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.2rem;
+  cursor: pointer;
+}
+.c-CardEvent--hidden {
+  overflow: hidden;
+}
+
+.CardEvent__img-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -10;
+}
+.CardEvent__overlay-background,
+.CardEvent__img-background {
+  border-radius: 20px;
+}
+
+.CardEvent__numEvent {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  color: var(--color-light-gray2);
+}
+
+.CardEvent__date-event,
+.CardEvent__numEvent {
+  transition: transform 0.2s;
+}
+
+.CardEvent__date-event {
+  align-items: center;
+  color: var(--color-dark-orange);
+  font-weight: bold;
+}
+
+.CardEvent__date--day {
+  font-size: 5rem;
+  line-height: 4.5rem;
+  transition: opacity 0.2s, transform 0.2s;
+}
+
+.CardEvent__date--month {
+  font-size: 2.1rem;
+  line-height: 2rem;
+  transition: opacity 0.2s, transform 0.2s;
+}
+
+.CardEvent__divider {
+  display: none;
+  position: static;
+  transform: translateY(0);
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 1024px) {
+  .c-CardEvent {
+    height: 25rem;
+  }
+
+  .CardEvent__numEvent {
+    font-size: 2.8rem;
+  }
+
+  .CardEvent__date-event {
+    position: absolute;
+    bottom: -10rem;
+  }
+
+  .c-CardEvent:hover .CardEvent__date-event,
+  .c-CardEvent:hover .CardEvent__numEvent {
+    transform: translateY(-5rem);
+  }
+  .CardEvent__date--day {
+    font-size: 11rem;
+    line-height: 9rem;
+  }
+
+  .CardEvent__date--month {
+    text-transform: uppercase;
+    font-size: 4.3rem;
+    line-height: 4rem;
+  }
+  .CardEvent__date--day,
+  .CardEvent__date--month {
+    transform: translateY(4rem);
+    opacity: 0;
+  }
+  .c-CardEvent:hover .CardEvent__date--day,
+  .c-CardEvent:hover .CardEvent__date--month {
+    transform: translateY(0rem);
+    opacity: 1;
+  }
+  .CardEvent__divider {
+    display: block;
+  }
+}
+
+@media (min-width: 1280px) {
+  .c-CardEvent {
+    height: 32rem;
+  }
+}

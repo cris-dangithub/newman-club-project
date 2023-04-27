@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@700;900&display=swap");
 @import url("/public/fonts/segoe-ui-4-cufonfonts-webfont/style.css");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800&display=swap");
 
 :root {
   --color-white: #ffffff;
@@ -17,7 +18,7 @@
   --color-dark-blue2: #003473;
   --color-light-aqua2: #08bdab;
   --color-darker-blue: #154e85;
-  --color-light-gray3: #f1f5f8;
+  --color-light-gray2: #f1f5f8;
   --color-medium-gray2: #666666;
   --color-transparent: #00000000;
   --color-light-gray3: #f7f7f7;
@@ -87,6 +88,10 @@ button {
   font-family: "Segoe UI Bold";
 }
 
+.font-poppins {
+  font-family: "Poppins", sans-serif;
+}
+
 .flex {
   display: flex;
 }
@@ -94,4 +99,23 @@ button {
 .flex-col {
   display: flex;
   flex-direction: column;
+}
+
+.overlay {
+  position: absolute;
+  z-index: -5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: #000000;
+  opacity: 0.5;
+}
+
+.orange-btn {
+  background-color: var(--color-dark-orange);
+  color: var(--color-white);
+  border-radius: 99px;
+  padding: 1rem 4rem;
+  text-transform: uppercase;
 }
