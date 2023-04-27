@@ -8,7 +8,7 @@ export const news: INews[] = [
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
     name: "Blog 1",
-    img: "/img/event1.jpg",
+    img: "img/event1.jpg",
   },
   {
     id: 2,
@@ -17,7 +17,7 @@ export const news: INews[] = [
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
     name: "Blog 2",
-    img: "/img/event2.jpg",
+    img: "img/event2.jpg",
   },
   {
     id: 3,
@@ -26,7 +26,7 @@ export const news: INews[] = [
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
     name: "Blog 3",
-    img: "/img/event3.jpg",
+    img: "img/event3.jpg",
   },
   {
     id: 4,
@@ -35,6 +35,6 @@ export const news: INews[] = [
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
     name: "Blog 4",
-    img: "/img/event4.jpg",
+    img: "img/event4.jpg",
   },
 ];

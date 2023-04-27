@@ -97,10 +97,10 @@ const Home = () => {
           </div>
           <CardRewards />
           <div className="the-crew__image-container">
-            <img className="the-crew__image" src="/img/memories2.png" />
+            <img className="the-crew__image" src="img/memories2.png" />
             <img
               className="the-crew__image the-crew__image--main"
-              src="/img/memories1.png"
+              src="img/memories1.png"
             />
           </div>
         </section>
@@ -130,13 +130,13 @@ const Home = () => {
         <div className="flex-col newman-soundtrack__container">
           <img
             className="newman-soundtrack__spoty"
-            src="/img/spotify.jpg"
+            src="img/spotify.jpg"
             alt=""
           />
           <div className="newman-soundtrack__man-container">
             <img
               className="newman-soundtrack__man"
-              src="/img/men-happy.png"
+              src="img/men-happy.png"
               alt=""
             />
             <div className="font-red-hat-display--bold flex-col newman-soundtrack__text-container">
@@ -152,7 +152,7 @@ const Home = () => {
       <article className="joinus">
         <section className="joinus__container">
           <div className="joinus__img-container">
-            <img className="joinus__img" src="/img/joinus.png" alt="" />
+            <img className="joinus__img" src="img/joinus.png" alt="" />
             <div className="joinus__img-logo">
               <LogoBlue />
             </div>

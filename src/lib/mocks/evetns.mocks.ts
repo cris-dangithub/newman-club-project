@@ -6,7 +6,7 @@ export const events: IEvents[] = [
     name: "Event 1",
 
     date: new Date("2023-06-13T08:00:00-05:00"),
-    img: "/img/event1.jpg",
+    img: "img/event1.jpg",
     place: "Movistar Arena",
     description: `Uno de los artistas más esperados en Colombia por primera vez en concierto, Louis Tomlinson, ex integrante de One Direction, llegará 
       por primera vez a Bogotá para presentar su primer trabajo como solista. Louis Tomlinson, se presentará en el Movistar Arena en Bogotá el 
@@ -17,7 +17,7 @@ export const events: IEvents[] = [
     id: 2,
     name: "Event 2",
     date: new Date("2023-08-26T00:00:00-05:00"),
-    img: "/img/event2.jpg",
+    img: "img/event2.jpg",
     place: "Movistar Arena",
     description: `Uno de los artistas más esperados en Colombia por primera vez en concierto, Louis Tomlinson, ex integrante de One Direction, llegará 
       por primera vez a Bogotá para presentar su primer trabajo como solista. Louis Tomlinson, se presentará en el Movistar Arena en Bogotá el 
@@ -29,7 +29,7 @@ export const events: IEvents[] = [
     id: 3,
     name: "Event 3",
     date: new Date("2023-10-26T00:00:00-05:00"),
-    img: "/img/event3.jpg",
+    img: "img/event3.jpg",
     place: "Movistar Arena",
     description: `Uno de los artistas más esperados en Colombia por primera vez en concierto, Louis Tomlinson, ex integrante de One Direction, llegará 
       por primera vez a Bogotá para presentar su primer trabajo como solista. Louis Tomlinson, se presentará en el Movistar Arena en Bogotá el 
@@ -41,7 +41,7 @@ export const events: IEvents[] = [
     id: 4,
     name: "Event 4",
     date: new Date("2023-12-28T00:00:00-05:00"),
-    img: "/img/event4.jpg",
+    img: "img/event4.jpg",
     place: "Movistar Arena",
     description: `Uno de los artistas más esperados en Colombia por primera vez en concierto, Louis Tomlinson, ex integrante de One Direction, llegará 
       por primera vez a Bogotá para presentar su primer trabajo como solista. Louis Tomlinson, se presentará en el Movistar Arena en Bogotá el 
