@@ -126,7 +126,7 @@ const Home = () => {
         </button>
       </article>
       {/* Newman Sountrack */}
-      <section className="flex-col newman-soundtrack">
+      <section className="newman-soundtrack">
         <div className="flex-col newman-soundtrack__container">
           <img
             className="newman-soundtrack__spoty"
